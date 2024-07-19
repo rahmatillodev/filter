@@ -6,7 +6,7 @@ const Input = ({ handleChange, value, title, name, color }) => {
       <input onChange={handleChange} value={value} type="radio" name={name} />
       <span
         className="mark"
-        style={{ webkitTextStroke: color ? "1px rgba(0,0,0,0.2)" : "", color: color }}
+        style={{ WebkitTextStroke: color ? "1px rgba(0,0,0,0.2)" : "", color: color }}
       >
         {title}
       </span>
