@@ -1,0 +1,11 @@
+.btns {
+    display: flex;
+    margin-top: 1rem;
+}
+.title {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.btns button {
+
+}

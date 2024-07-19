@@ -1,0 +1,23 @@
+.sidebar {
+    height: 100%;
+    border-right: 2px solid #e5e5e5;
+    width: 20%;
+}
+
+
+
+/* category , price , colors */
+.label {
+    display: block;
+    font-size: 17px;
+    margin: 7px 5px;
+}
+.label h2 {
+    margin: 20px 0px;
+}
+.label input {
+    margin: 5px;
+}
+.colors {
+    
+}
