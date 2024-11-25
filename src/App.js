@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar/Sidebar";
 
 import profucts from "./db/data";
 import Card from "./components/Card";
-
+import {BrowserRouter, Route, Routes} from "react-router-dom"
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
@@ -65,6 +65,7 @@ const App = () => {
 
   return (
     <>
+    <BrowserRouter>
       <Nav query={query} handleInputChange={handleInputChange} />
       <div className="filter">
         <Sidebar handleChange={handleChange} />
@@ -73,6 +74,10 @@ const App = () => {
           <Products result={result} />
         </div>
       </div>
+    <Routes>
+      <Route path="*" element={<h1>404</h1>} />
+    </Routes>
+    </BrowserRouter>
     </>
   );
 };
